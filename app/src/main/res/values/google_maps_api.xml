@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //SHA1 Fingerprint F3:3E:34:F9:20:EC:8D:AC:C7:40:86:23:D8:37:52:8B:6D:40:1D:BA
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+       AIzaSyCMctFbS-CZQR3mevjb5zV3hpHCip3S6To
+    </string>
+</resources>

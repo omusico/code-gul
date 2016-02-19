@@ -1,0 +1,83 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="top"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/logobackground"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/studentbutton"
+                    android:text="Student"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:padding="12dp"
+                    android:textSize="25dp"
+                    fbutton:buttonColor="@color/christblue"
+                    fbutton:shadowColor="@color/fbutton_color_midnight_blue"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+                    fbutton:cornerRadius="5dp"
+                    android:textColor="@color/white"
+                    />
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/driverbutton"
+                    android:text="  Driver  "
+                    android:textStyle="bold"
+                    android:padding="12dp"
+                    android:textSize="25dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    fbutton:buttonColor="@color/christblue"
+                    fbutton:shadowColor="@color/fbutton_color_midnight_blue"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+                    fbutton:cornerRadius="5dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- The navigation drawer -->
+    <ListView
+
+        android:id="@+id/navdrawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@color/christblue"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false">
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>

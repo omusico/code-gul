@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/christblue"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+                tools:context="com.example.gulzar.christuniversitybus.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <com.rengwuxian.materialedittext.MaterialEditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:met_singleLineEllipsis="true"
+            android:hint="First Name"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/white"
+
+            />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                app:met_singleLineEllipsis="true"
+                app:met_floatingLabel="highlight"
+                app:met_baseColor="@color/white"
+                /></TableRow>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_minCharacters="0"
+            app:met_maxCharacters="7"
+            app:met_baseColor="@color/white"
+            app:met_primaryColor="@color/red"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/white"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pin"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_minCharacters="0"
+            app:met_maxCharacters="7"
+            app:met_baseColor="@color/white"
+            app:met_primaryColor="@color/red"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <fragment
+                android:id="@+id/mapview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        </LinearLayout>
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sb"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowColor="@color/fbutton_color_green_sea"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
