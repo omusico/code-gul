@@ -4,6 +4,7 @@ package com.example.gulzar.christuniversitybus;
 import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
+import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -30,8 +31,8 @@ public class getcoordinatebyname {
             );
 
         } catch (Exception ex) {
+        p1=null;
 
-            ex.printStackTrace();
         }
 
         return p1;

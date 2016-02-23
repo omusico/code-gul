@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <info.hoang8f.widget.FButton
+                    android:onClick="Student_button"
                     android:id="@+id/studentbutton"
                     android:text="Student"
                     android:layout_width="180dp"
@@ -43,6 +44,7 @@
                     android:textColor="@color/white"
                     />
                 <info.hoang8f.widget.FButton
+                    android:onClick="Driver_button"
                     android:id="@+id/driverbutton"
                     android:text="  Driver  "
                     android:textStyle="bold"

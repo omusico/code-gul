@@ -4,10 +4,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ChristUniversityBus.iml" filepath="$PROJECT_DIR$/ChristUniversityBus.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/Ldrawer/Ldrawer.iml" filepath="$PROJECT_DIR$/libs/Ldrawer/Ldrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/Ldrawer/Ldrawer.iml" filepath="$PROJECT_DIR$/libs/Ldrawer/Ldrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/MaterialEditText/MaterialEditText.iml" filepath="$PROJECT_DIR$/libs/MaterialEditText/MaterialEditText.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/MaterialEditText/MaterialEditText.iml" filepath="$PROJECT_DIR$/libs/MaterialEditText/MaterialEditText.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/MaterialTextField/MaterialTextField.iml" filepath="$PROJECT_DIR$/libs/MaterialTextField/MaterialTextField.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/MaterialTextField/MaterialTextField.iml" filepath="$PROJECT_DIR$/libs/MaterialTextField/MaterialTextField.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/android-flat-button/android-flat-button.iml" filepath="$PROJECT_DIR$/libs/android-flat-button/android-flat-button.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/android-flat-button/android-flat-button.iml" filepath="$PROJECT_DIR$/libs/android-flat-button/android-flat-button.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/geofire/geofire.iml" filepath="$PROJECT_DIR$/libs/geofire/geofire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/geofire/geofire.iml" filepath="$PROJECT_DIR$/libs/geofire/geofire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
     </modules>
   </component>

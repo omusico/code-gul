@@ -4,7 +4,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@color/christblue"
+                android:background="@color/white"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:fbutton="http://schemas.android.com/apk/res-auto"
                 tools:context="com.example.gulzar.christuniversitybus.Register">
@@ -23,25 +23,27 @@
             android:layout_height="wrap_content"
            >
             <com.rengwuxian.materialedittext.MaterialEditText
-
+                android:id="@+id/fn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:met_singleLineEllipsis="true"
             android:hint="First Name"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="@color/white"
+            app:met_baseColor="@color/black"
 
             />
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ln"
                 android:layout_marginLeft="16dp"
                 android:layout_height="wrap_content"
                 android:hint="Last Name"
                 app:met_singleLineEllipsis="true"
                 app:met_floatingLabel="highlight"
-                app:met_baseColor="@color/white"
+                app:met_baseColor="@color/black"
                 /></TableRow>
 
         <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Reg"
@@ -49,7 +51,7 @@
             app:met_singleLineEllipsis="true"
             app:met_minCharacters="0"
             app:met_maxCharacters="7"
-            app:met_baseColor="@color/white"
+            app:met_baseColor="@color/black"
             app:met_primaryColor="@color/red"
             />
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -58,7 +60,7 @@
             android:layout_height="wrap_content"
             android:hint="Address"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="@color/white"
+            app:met_baseColor="@color/black"
 
             />
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -69,9 +71,15 @@
             app:met_singleLineEllipsis="true"
             app:met_minCharacters="0"
             app:met_maxCharacters="7"
-            app:met_baseColor="@color/white"
+            app:met_baseColor="@color/black"
             app:met_primaryColor="@color/red"
             />
+        <AutoCompleteTextView
+            android:hint="Bus Stop"
+            android:id="@+id/actv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,6 +92,7 @@
                 android:name="com.google.android.gms.maps.SupportMapFragment"/>
         </LinearLayout>
         <info.hoang8f.widget.FButton
+            android:onClick="Submitbtn"
             android:id="@+id/sb"
             android:layout_marginTop="20dp"
             android:text="Submit"
@@ -94,6 +103,10 @@
             fbutton:cornerRadius="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbar"/>
     </LinearLayout>
 
 

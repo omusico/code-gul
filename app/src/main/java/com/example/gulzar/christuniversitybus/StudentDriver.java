@@ -7,15 +7,20 @@ import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import com.ikimuhendis.ldrawer.ActionBarDrawerToggle;
 import com.ikimuhendis.ldrawer.DrawerArrowDrawable;
+
+import java.sql.Connection;
 
 
 public class StudentDriver extends Activity {
@@ -25,18 +30,28 @@ public class StudentDriver extends Activity {
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerArrowDrawable drawerArrow;
     private boolean drawerArrowColor;
-
+    Button mstudent;
+    ConnectionClass connectionClass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_driver);
+        connectionClass= new ConnectionClass();
         ActionBar ab = getActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setHomeButtonEnabled(true);
         ab.setTitle("");
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.navdrawer);
-
+        mstudent=(Button)findViewById(R.id.studentbutton);
+        try {
+            if(connectionClass.CONN()==null)
+            {
+               mstudent.setText("connec");
+            }
+        }catch (Exception e){
+            Log.e("ERRO", e.getMessage());
+           }
 
         drawerArrow = new DrawerArrowDrawable(this) {
             @Override
@@ -108,5 +123,10 @@ public class StudentDriver extends Activity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+    public void Student_button(View view)
+    {
+        Intent intent=new Intent(StudentDriver.this,Register.class);
+        startActivity(intent);
     }
 }

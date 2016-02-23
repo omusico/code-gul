@@ -9,4 +9,5 @@
     <string name="drawer_close">drawer_close</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_bus_map">BusMap</string>
+    <string name="title_activity_connection__class">Connection_Class</string>
 </resources>
